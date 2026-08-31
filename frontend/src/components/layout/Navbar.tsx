@@ -41,10 +41,15 @@ export default function Navbar() {
             <ShoppingBag size={15} /> Buy Now
           </Link>
 
-          {/* Mobile Menu Button */}
-          <button aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen(!open)} className="flex h-10 w-10 items-center justify-center rounded-lg border border-neutral-light bg-white text-foreground md:hidden">
-            {open ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile actions */}
+          <div className="flex items-center gap-2 md:hidden">
+            <Link href="/products" className="btn-primary min-h-10 gap-1.5 px-3 py-2 text-[0.65rem] tracking-[0.06em]">
+              <ShoppingBag size={14} /> Buy Now
+            </Link>
+            <button aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen(!open)} className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-neutral-light bg-white text-foreground">
+              {open ? <X size={22} /> : <Menu size={22} />}
+            </button>
+          </div>
         </div>
         {open && <div className="border-t border-neutral-light py-4 md:hidden"><div className="grid grid-cols-2 gap-3">{links.map((link) => { const Icon = link.icon; return <Link key={link.href} href={link.href} onClick={() => setOpen(false)} className="flex min-h-14 items-center gap-3 rounded-xl border border-neutral-light bg-white px-4 text-xs font-bold uppercase tracking-[0.08em]"><Icon size={17} className="shrink-0 text-accent" />{link.label}</Link>; })}</div></div>}
       </div>
