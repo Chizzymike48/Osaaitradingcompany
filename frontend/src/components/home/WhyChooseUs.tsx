@@ -9,12 +9,12 @@ const standards = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-[#ede7dc] px-5 py-20 sm:px-8 md:py-32 lg:px-10">
+    <section className="bg-[#ede7dc] px-5 py-16 sm:px-8 md:py-32 lg:px-10">
       <div className="mx-auto max-w-7xl">
         <SectionHeading title="The OSSAI standard" subtitle="A more thoughtful way to bring your space together." />
-        <div className="mt-16 grid border-t border-[#ddd7cc] md:grid-cols-2">
+        <div className="mt-10 grid border-t border-[#ddd7cc] md:mt-16 md:grid-cols-2">
           {standards.map(([number, title, description]) => (
-            <div key={number} className="grid grid-cols-[3.25rem_1fr] gap-4 border-b border-[#ddd7cc] py-8 pr-5 md:py-10 md:pr-12">
+            <div key={number} className="grid grid-cols-[2.75rem_1fr] gap-3 border-b border-[#ddd7cc] py-7 pr-2 md:grid-cols-[3.25rem_1fr] md:gap-4 md:py-10 md:pr-12">
               <span className="pt-1 text-xs font-medium tracking-[0.14em] text-accent">{number}</span>
               <div><h3 className="text-xl font-medium tracking-[-0.02em] text-foreground">{title}</h3><p className="mt-3 max-w-sm text-sm leading-6 text-neutral-dark">{description}</p></div>
             </div>

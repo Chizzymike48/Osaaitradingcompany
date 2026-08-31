@@ -12,7 +12,7 @@ export default function ProductCard({ product }: ProductCardProps) {
     <Link href={`/products/${product.slug}`} className="group block">
       <article className="cursor-pointer">
         {/* Image Container */}
-        <div className="relative mb-6 aspect-[4/4.6] overflow-hidden rounded-xl border border-neutral-light bg-[#f4f0e8]">
+        <div className="relative mb-4 aspect-[4/4.7] overflow-hidden rounded-xl border border-neutral-light bg-[#f4f0e8] md:mb-6 md:aspect-[4/4.6]">
           <Image
             src={product.images[0]}
             alt={product.name}
@@ -23,7 +23,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         </div>
 
         {/* Product Info */}
-        <div className="space-y-3 px-1">
+        <div className="space-y-2 px-0 md:space-y-3 md:px-1">
           {/* Category */}
           <p className="text-xs font-medium text-accent uppercase tracking-wider">
             {product.category
@@ -33,24 +33,24 @@ export default function ProductCard({ product }: ProductCardProps) {
           </p>
 
           {/* Name */}
-          <h3 className="font-serif text-xl font-bold leading-tight tracking-tight group-hover:text-accent transition-colors">
+          <h3 className="font-serif text-base font-bold leading-snug tracking-tight transition-colors group-hover:text-accent md:text-xl md:leading-tight">
             {product.name}
           </h3>
 
           {/* Price */}
-          <div className="pt-2">
+          <div className="pt-1 md:pt-2">
             {product.priceOnRequest ? (
-              <p className="text-sm font-medium text-neutral-dark">
+              <p className="text-xs font-medium text-neutral-dark md:text-sm">
                 Price on Request
               </p>
             ) : product.price ? (
-              <p className="text-lg font-semibold text-foreground">
+              <p className="text-sm font-semibold text-foreground md:text-lg">
                 {formatCurrency(product.price)}
               </p>
             ) : null}
           </div>
 
-          <span className="mt-5 inline-flex items-center text-xs font-bold uppercase tracking-[0.13em] text-foreground">
+          <span className="mt-3 inline-flex items-center text-[0.65rem] font-bold uppercase tracking-[0.09em] text-foreground md:mt-5 md:text-xs md:tracking-[0.13em]">
             View product <span className="ml-2 text-accent transition-transform group-hover:translate-x-1">→</span>
           </span>
         </div>

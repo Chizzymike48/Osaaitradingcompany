@@ -38,7 +38,7 @@ export default function Navbar() {
             href="/products"
             className="btn-primary hidden min-h-0 gap-2 px-4 py-3 lg:inline-flex"
           >
-            <ShoppingBag size={15} /> Shop Collection
+            <ShoppingBag size={15} /> Buy Now
           </Link>
 
           {/* Mobile Menu Button */}

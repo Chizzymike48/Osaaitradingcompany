@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[calc(100vh-4.75rem)] items-end overflow-hidden md:items-center">
+    <section className="relative flex min-h-[39rem] items-end overflow-hidden md:min-h-[calc(100vh-4.75rem)] md:items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -13,21 +13,21 @@ export default function Hero() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/15 md:bg-gradient-to-r md:from-black/55 md:via-black/20 md:to-transparent" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-20 pt-28 sm:px-8 md:py-20 lg:px-10">
-        <p className="mb-6 text-xs font-semibold uppercase tracking-[0.24em] text-white/80">The 2026 collection</p>
-        <h1 className="max-w-3xl font-serif text-5xl leading-[0.98] text-white md:text-7xl lg:text-[5.4rem]">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-10 pt-28 sm:px-8 md:py-20 lg:px-10">
+        <p className="mb-4 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-white/80 md:mb-6 md:text-xs md:tracking-[0.24em]">The 2026 collection</p>
+        <h1 className="max-w-3xl font-serif text-[clamp(2.55rem,11vw,3.6rem)] leading-[0.98] text-white md:text-7xl lg:text-[5.4rem]">
           A considered home starts with one beautiful piece.
         </h1>
 
-        <p className="mt-7 max-w-xl text-base leading-8 text-white/85 md:text-lg">
+        <p className="mt-5 max-w-xl text-[0.95rem] leading-7 text-white/85 md:mt-7 md:text-lg md:leading-8">
           Thoughtfully sourced furniture and interior pieces for spaces that feel personal, grounded and unmistakably yours.
         </p>
 
-        <div className="hero-actions mt-10 flex flex-col gap-3 sm:flex-row">
+        <div className="hero-actions mt-7 flex flex-col gap-3 sm:mt-10 sm:flex-row">
           <Link
             href="/products"
             className="btn-light"

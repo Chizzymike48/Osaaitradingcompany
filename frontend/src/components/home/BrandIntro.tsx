@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function BrandIntro() {
   return (
-    <section className="bg-white px-5 py-20 sm:px-8 md:py-32 lg:px-10">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-24">
-        <div className="relative min-h-[30rem] overflow-hidden bg-[#ede7dc] md:min-h-[39rem]">
+    <section className="bg-white px-5 py-16 sm:px-8 md:py-32 lg:px-10">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-24">
+        <div className="relative min-h-[24rem] overflow-hidden bg-[#ede7dc] md:min-h-[39rem]">
           <Image src="/products/56565656.jpeg" alt="Soft contemporary lounge furniture" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
           <div className="absolute bottom-0 left-0 bg-[#24211d] px-7 py-6 text-white md:px-9">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">Made for your everyday</p>

@@ -15,7 +15,7 @@ export default function SectionHeading({
     <div className={centered ? "text-center" : ""}>
       <div className={`mb-5 flex items-center gap-3 ${centered ? "justify-center" : ""}`}>
         <span className="h-px w-8 bg-accent" />
-        <span className="eyebrow">OSSAI EDIT</span>
+        <span className="eyebrow">OSSAI COLLECTION</span>
         <span className="h-px w-8 bg-accent" />
       </div>
       <h2 className={`font-serif text-3xl font-bold tracking-[-0.045em] md:text-5xl lg:text-6xl mb-5 ${inverse ? "text-white" : "text-foreground"}`}>

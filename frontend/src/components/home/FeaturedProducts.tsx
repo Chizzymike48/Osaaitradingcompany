@@ -7,7 +7,7 @@ export default function FeaturedProducts() {
   const featured = PRODUCTS.filter((p) => p.featured).slice(0, 4);
 
   return (
-    <section className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-[#f7f4ee]">
+    <section className="bg-[#f7f4ee] px-4 py-16 sm:px-6 md:py-32 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <p className="eyebrow mb-5 text-center">Selected for living</p>
         <SectionHeading
@@ -15,11 +15,11 @@ export default function FeaturedProducts() {
           subtitle="Handpicked pieces from our premium collection"
         />
 
-        <div className="mt-16">
+        <div className="mt-10 md:mt-16">
           <ProductGrid products={featured} />
         </div>
 
-        <div className="text-center mt-16">
+        <div className="mt-10 text-center md:mt-16">
           <Link
             href="/products"
             className="btn-primary"
