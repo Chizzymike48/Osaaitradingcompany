@@ -9,14 +9,14 @@ export default function Categories() {
       <div className="absolute -right-32 top-12 h-80 w-80 rounded-full border border-[#d7b879]/20" />
       <div className="absolute -right-12 top-32 h-56 w-56 rounded-full border border-[#d7b879]/10" />
       <div className="max-w-7xl mx-auto">
-        <div className="px-5 sm:px-8 lg:px-10"><SectionHeading title="Shop by room" subtitle="Curated pieces that bring a complete, considered feeling to every part of your home." inverse /></div>
+        <div className="motion-reveal px-5 sm:px-8 lg:px-10"><SectionHeading title="Shop by room" subtitle="Curated pieces that bring a complete, considered feeling to every part of your home." inverse /></div>
 
         <div className="relative mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-3 [-ms-overflow-style:none] [scrollbar-width:none] md:mt-14 md:grid md:grid-cols-2 md:gap-px md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-5">
           {CATEGORIES.map((category) => (
             <Link
               key={category.id}
               href={`/products?category=${category.id}`}
-              className="group relative min-h-[22rem] w-[78vw] shrink-0 snap-start overflow-hidden rounded-2xl bg-[#24231f] p-5 sm:w-[19rem] md:min-h-[26rem] md:w-auto md:p-6"
+              className="motion-card group relative min-h-[22rem] w-[78vw] shrink-0 snap-start overflow-hidden rounded-2xl bg-[#24231f] p-5 sm:w-[19rem] md:min-h-[26rem] md:w-auto md:p-6"
             >
               <div className="absolute inset-0">
                 <Image

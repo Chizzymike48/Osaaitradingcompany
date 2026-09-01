@@ -41,11 +41,8 @@ export default function Navbar() {
             <ShoppingBag size={15} /> Buy Now
           </Link>
 
-          {/* Mobile actions */}
-          <div className="flex items-center gap-2 md:hidden">
-            <Link href="/products" className="btn-primary min-h-10 gap-1.5 px-3 py-2 text-[0.65rem] tracking-[0.06em]">
-              <ShoppingBag size={14} /> Buy Now
-            </Link>
+          {/* Mobile navigation */}
+          <div className="md:hidden">
             <button aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen(!open)} className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-neutral-light bg-white text-foreground">
               {open ? <X size={22} /> : <Menu size={22} />}
             </button>

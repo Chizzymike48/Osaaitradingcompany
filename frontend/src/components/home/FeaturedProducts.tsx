@@ -8,7 +8,7 @@ export default function FeaturedProducts() {
 
   return (
     <section className="bg-[#f7f4ee] px-4 py-16 sm:px-6 md:py-32 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="motion-reveal max-w-7xl mx-auto">
         <p className="eyebrow mb-5 text-center">Selected for living</p>
         <SectionHeading
           title="Featured Collection"
