@@ -43,7 +43,7 @@ export const PRODUCTS: Product[] = [
     description: "Contemporary dining chair with clean lines",
     longDescription:
       "A beautifully crafted dining chair that combines modern aesthetics with superior comfort. Features a sleek wooden frame and premium upholstered seat.",
-    price: 150000,
+    price: 450000,
     priceOnRequest: false,
     availability: "in-stock",
     images: [
@@ -64,7 +64,7 @@ export const PRODUCTS: Product[] = [
     description: "Luxurious velvet upholstered dining chair",
     longDescription:
       "Elegant dining chair upholstered in premium velvet fabric. The generous seat provides comfort while maintaining a sophisticated appearance.",
-    price: 185000,
+    price: 380000,
     priceOnRequest: false,
     availability: "in-stock",
     images: [
@@ -83,7 +83,7 @@ export const PRODUCTS: Product[] = [
     name: "Minimalist Dining Chair",
     category: "dining-chairs",
     description: "Simple yet elegant minimalist design",
-    price: 120000,
+    price: 650000,
     priceOnRequest: false,
     availability: "in-stock",
     images: [
@@ -141,7 +141,7 @@ export const PRODUCTS: Product[] = [
     name: "Contemporary Dining Table",
     category: "dining-tables",
     description: "Modern minimalist dining table",
-    price: 720000,
+    price: 400000,
     priceOnRequest: false,
     availability: "in-stock",
     images: [
@@ -159,7 +159,7 @@ export const PRODUCTS: Product[] = [
     name: "Marble Dining Table",
     category: "dining-tables",
     description: "Luxurious marble top dining table",
-    price: 1200000,
+    price: 70000,
     priceOnRequest: false,
     availability: "out-of-stock",
     images: [
@@ -181,7 +181,7 @@ export const PRODUCTS: Product[] = [
     description: "Complete 6-seater dining set with table and chairs",
     longDescription:
       "A complete dining solution featuring a spacious table and six matching chairs. Perfect for family gatherings and entertaining.",
-    price: 1250000,
+    price: 580000,
     priceOnRequest: false,
     availability: "in-stock",
     images: [
@@ -299,7 +299,7 @@ export const PRODUCTS: Product[] = [
     name: "Minimalist Side Table",
     category: "interior",
     description: "Elegant side table with clean design",
-    price: 185000,
+    price: 580000,
     priceOnRequest: false,
     availability: "in-stock",
     images: [
